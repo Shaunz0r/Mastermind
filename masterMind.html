@@ -1,151 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Mastermind Game!</title>
-        <link href="masterMind.css" type="text/css" rel="stylesheet">
-        <script src="masterMind.js" type="text/js"></script>
-    </head>
-    <body>
-        <h1>MasterMind!</h1>
-        <div class='container' id='gameBoard'>
-            <div class='container' id='target'>
-                <div class='piece' id='targetPiece1'></div>
-                <div class='piece' id='targetPiece2'></div>
-                <div class='piece' id='targetPiece3'></div>
-                <div class='piece' id='targetPiece4'></div>
-            </div>
 
-            <div class="container" id="guess10">
-                <div class='piece' id='guess10Piece1'></div>
-                <div class='piece' id='guess10Piece2'></div>
-                <div class='piece' id='guess10Piece3'></div>
-                <div class='piece' id='guess10Piece4'></div>
-            </div>
+<head>
+    <title>Mastermind Game!</title>
+    <link href="masterMind.css" type="text/css" rel="stylesheet">
+    <script src="masterMind.js" type="text/js"></script>
+</head>
 
-            <div class="resContainer" id="guess10Res">
-                <div class='resPiece' id='guess10res1'></div>
-                <div class='resPiece' id='guess10res2'></div>
-                <div class='resPiece' id='guess10res3'></div>
-                <div class='resPiece' id='guess10res4'></div>
-            </div>
-
-            <div class="container" id="guess9">
-                <div class='piece' id='guess9Piece1'></div>
-                <div class='piece' id='guess9Piece2'></div>
-                <div class='piece' id='guess9Piece3'></div>
-                <div class='piece' id='guess9Piece4'></div>
-            </div>
-            <div class="resContainer" id="guess9Res">
-                <div class='resPiece' id='guess9res1'></div>
-                <div class='resPiece' id='guess9res2'></div>
-                <div class='resPiece' id='guess9res3'></div>
-                <div class='resPiece' id='guess9res4'></div>
-            </div>
-                
-            <div class="container" id="guess8">
-                <div class='piece' id='guess8Piece1'></div>
-                <div class='piece' id='guess8Piece2'></div>
-                <div class='piece' id='guess8Piece3'></div>
-                <div class='piece' id='guess8Piece4'></div>
-            </div>
-            <div class="resContainer" id="guess8Res">
-                <div class='resPiece' id='guess8res1'></div>
-                <div class='resPiece' id='guess8res2'></div>
-                <div class='resPiece' id='guess8res3'></div>
-                <div class='resPiece' id='guess8res4'></div>
-            </div>
-
-            <div class="container" id="guess7">
-                <div class='piece' id='guess7Piece1'></div>
-                <div class='piece' id='guess7Piece2'></div>
-                <div class='piece' id='guess7Piece3'></div>
-                <div class='piece' id='guess7Piece4'></div>
-            </div>
-            <div class="resContainer" id="guess7Res">
-                <div class='resPiece' id='guess7res1'></div>
-                <div class='resPiece' id='guess7res2'></div>
-                <div class='resPiece' id='guess7res3'></div>
-                <div class='resPiece' id='guess7res4'></div>
-            </div>
-
-            <div class="container" id="guess6">
-                <div class='piece' id='guess6Piece1'></div>
-                <div class='piece' id='guess6Piece2'></div>
-                <div class='piece' id='guess6Piece3'></div>
-                <div class='piece' id='guess6Piece4'></div>
-            </div>
-            <div class="resContainer" id="guess6Res">
-                <div class='resPiece' id='guess6res1'></div>
-                <div class='resPiece' id='guess6res2'></div>
-                <div class='resPiece' id='guess6res3'></div>
-                <div class='resPiece' id='guess6res4'></div>
-            </div>
-
-            <div class="container" id="guess5">
-                <div class='piece' id='guess5Piece1'></div>
-                <div class='piece' id='guess5Piece2'></div>
-                <div class='piece' id='guess5Piece3'></div>
-                <div class='piece' id='guess5Piece4'></div>
-            </div>
-            <div class="resContainer" id="guess5Res">
-                <div class='resPiece' id='guess5res1'></div>
-                <div class='resPiece' id='guess5res2'></div>
-                <div class='resPiece' id='guess5res3'></div>
-                <div class='resPiece' id='guess5res4'></div>
-            </div>
-
-            <div class="container" id="guess4">
-                <div class='piece' id='guess4Piece1'></div>
-                <div class='piece' id='guess4Piece2'></div>
-                <div class='piece' id='guess4Piece3'></div>
-                <div class='piece' id='guess4Piece4'></div>
-            </div>
-            <div class="resContainer" id="guess4Res">
-                <div class='resPiece' id='guess4res1'></div>
-                <div class='resPiece' id='guess4res2'></div>
-                <div class='resPiece' id='guess4res3'></div>
-                <div class='resPiece' id='guess4res4'></div>
-            </div>
-
-            <div class="container" id="guess3">
-                <div class='piece' id='guess3Piece1'></div>
-                <div class='piece' id='guess3Piece2'></div>
-                <div class='piece' id='guess3Piece3'></div>
-                <div class='piece' id='guess3Piece4'></div>
-            </div>
-            <div class="resContainer" id="guess3Res">
-                <div class='resPiece' id='guess3res1'></div>
-                <div class='resPiece' id='guess3res2'></div>
-                <div class='resPiece' id='guess3res3'></div>
-                <div class='resPiece' id='guess3res4'></div>
-            </div>
-
-            <div class="container" id="guess2">
-                <div class='piece' id='guess2Piece1'></div>
-                <div class='piece' id='guess2Piece2'></div>
-                <div class='piece' id='guess2Piece3'></div>
-                <div class='piece' id='guess2Piece4'></div>
-            </div>
-            <div class="resContainer" id="guess2Res">
-                <div class='resPiece' id='guess2res1'></div>
-                <div class='resPiece' id='guess2res2'></div>
-                <div class='resPiece' id='guess2res3'></div>
-                <div class='resPiece' id='guess2res4'></div>
-            </div>
-
-            <div class="container" id="guess1">
-                <div class='piece' id='guess1Piece1'></div>
-                <div class='piece' id='guess1Piece2'></div>
-                <div class='piece' id='guess1Piece3'></div>
-                <div class='piece' id='guess1Piece4'></div>
-            </div>
-            <div class="resContainer" id="guess1Res">
-                <div class='resPiece' id='guess1res1'></div>
-                <div class='resPiece' id='guess1res2'></div>
-                <div class='resPiece' id='guess1res3'></div>
-                <div class='resPiece' id='guess1res4'></div>
-            </div>
+<body>
+    <h1>MasterMind!</h1>
+    <div class='container' id='gameBoard'>
+        <div class='container' id='target'>
+            <div class='piece' id='targetPiece1'></div>
+            <div class='piece' id='targetPiece2'></div>
+            <div class='piece' id='targetPiece3'></div>
+            <div class='piece' id='targetPiece4'></div>
         </div>
-        
-    </body>
+
+        <div class="container" id="guess10">
+            <div class='piece' id='guess10Piece1'></div>
+            <div class='piece' id='guess10Piece2'></div>
+            <div class='piece' id='guess10Piece3'></div>
+            <div class='piece' id='guess10Piece4'></div>
+        </div>
+
+        <div class="resContainer" id="guess10Res">
+            <div class='resPiece' id='guess10res1'></div>
+            <div class='resPiece' id='guess10res2'></div>
+            <div class='resPiece' id='guess10res3'></div>
+            <div class='resPiece' id='guess10res4'></div>
+        </div>
+
+        <div class="container" id="guess9">
+            <div class='piece' id='guess9Piece1'></div>
+            <div class='piece' id='guess9Piece2'></div>
+            <div class='piece' id='guess9Piece3'></div>
+            <div class='piece' id='guess9Piece4'></div>
+        </div>
+        <div class="resContainer" id="guess9Res">
+            <div class='resPiece' id='guess9res1'></div>
+            <div class='resPiece' id='guess9res2'></div>
+            <div class='resPiece' id='guess9res3'></div>
+            <div class='resPiece' id='guess9res4'></div>
+        </div>
+
+        <div class="container" id="guess8">
+            <div class='piece' id='guess8Piece1'></div>
+            <div class='piece' id='guess8Piece2'></div>
+            <div class='piece' id='guess8Piece3'></div>
+            <div class='piece' id='guess8Piece4'></div>
+        </div>
+        <div class="resContainer" id="guess8Res">
+            <div class='resPiece' id='guess8res1'></div>
+            <div class='resPiece' id='guess8res2'></div>
+            <div class='resPiece' id='guess8res3'></div>
+            <div class='resPiece' id='guess8res4'></div>
+        </div>
+
+        <div class="container" id="guess7">
+            <div class='piece' id='guess7Piece1'></div>
+            <div class='piece' id='guess7Piece2'></div>
+            <div class='piece' id='guess7Piece3'></div>
+            <div class='piece' id='guess7Piece4'></div>
+        </div>
+        <div class="resContainer" id="guess7Res">
+            <div class='resPiece' id='guess7res1'></div>
+            <div class='resPiece' id='guess7res2'></div>
+            <div class='resPiece' id='guess7res3'></div>
+            <div class='resPiece' id='guess7res4'></div>
+        </div>
+
+        <div class="container" id="guess6">
+            <div class='piece' id='guess6Piece1'></div>
+            <div class='piece' id='guess6Piece2'></div>
+            <div class='piece' id='guess6Piece3'></div>
+            <div class='piece' id='guess6Piece4'></div>
+        </div>
+        <div class="resContainer" id="guess6Res">
+            <div class='resPiece' id='guess6res1'></div>
+            <div class='resPiece' id='guess6res2'></div>
+            <div class='resPiece' id='guess6res3'></div>
+            <div class='resPiece' id='guess6res4'></div>
+        </div>
+
+        <div class="container" id="guess5">
+            <div class='piece' id='guess5Piece1'></div>
+            <div class='piece' id='guess5Piece2'></div>
+            <div class='piece' id='guess5Piece3'></div>
+            <div class='piece' id='guess5Piece4'></div>
+        </div>
+        <div class="resContainer" id="guess5Res">
+            <div class='resPiece' id='guess5res1'></div>
+            <div class='resPiece' id='guess5res2'></div>
+            <div class='resPiece' id='guess5res3'></div>
+            <div class='resPiece' id='guess5res4'></div>
+        </div>
+
+        <div class="container" id="guess4">
+            <div class='piece' id='guess4Piece1'></div>
+            <div class='piece' id='guess4Piece2'></div>
+            <div class='piece' id='guess4Piece3'></div>
+            <div class='piece' id='guess4Piece4'></div>
+        </div>
+        <div class="resContainer" id="guess4Res">
+            <div class='resPiece' id='guess4res1'></div>
+            <div class='resPiece' id='guess4res2'></div>
+            <div class='resPiece' id='guess4res3'></div>
+            <div class='resPiece' id='guess4res4'></div>
+        </div>
+
+        <div class="container" id="guess3">
+            <div class='piece' id='guess3Piece1'></div>
+            <div class='piece' id='guess3Piece2'></div>
+            <div class='piece' id='guess3Piece3'></div>
+            <div class='piece' id='guess3Piece4'></div>
+        </div>
+        <div class="resContainer" id="guess3Res">
+            <div class='resPiece' id='guess3res1'></div>
+            <div class='resPiece' id='guess3res2'></div>
+            <div class='resPiece' id='guess3res3'></div>
+            <div class='resPiece' id='guess3res4'></div>
+        </div>
+
+        <div class="container" id="guess2">
+            <div class='piece' id='guess2Piece1'></div>
+            <div class='piece' id='guess2Piece2'></div>
+            <div class='piece' id='guess2Piece3'></div>
+            <div class='piece' id='guess2Piece4'></div>
+        </div>
+        <div class="resContainer" id="guess2Res">
+            <div class='resPiece' id='guess2res1'></div>
+            <div class='resPiece' id='guess2res2'></div>
+            <div class='resPiece' id='guess2res3'></div>
+            <div class='resPiece' id='guess2res4'></div>
+        </div>
+
+        <div class="container" id="guess1">
+            <div class='piece' id='guess1Piece1'></div>
+            <div class='piece' id='guess1Piece2'></div>
+            <div class='piece' id='guess1Piece3'></div>
+            <div class='piece' id='guess1Piece4'></div>
+        </div>
+        <div class="resContainer" id="guess1Res">
+            <div class='resPiece' id='guess1res1'></div>
+            <div class='resPiece' id='guess1res2'></div>
+            <div class='resPiece' id='guess1res3'></div>
+            <div class='resPiece' id='guess1res4'></div>
+        </div>
+    </div>
+
+</body>
+
 </html>
