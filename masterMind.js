@@ -9,7 +9,12 @@ window.onload = function () {
         element.addEventListener("click", colourToggle);
     }
 }
-
+//start of target array
+var target = document.getElementsByClassName("targetPiece");
+target.array.forEach(element => {
+    
+    
+});
 var colours = ["red", "green", "blue", "yellow" ,"purple", "white"];
 function colourToggle(event) {
     var element = event.target;
