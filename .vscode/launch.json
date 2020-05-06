@@ -2,16 +2,19 @@
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+
+    // to use, install Debugger for Chrome extension
+    // Ctrl + Shift + X in VS Code -> search -> install 
+    // Click Run when installed and Chrome will auto open and you can debug in VS Code
+    // WARNING: Debugging this way is a massive resource hog. Expect high CPU usage
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "type": "chrome",
             "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\masterMind.js"
+            "name": "Launch Chrome",
+            "url": "${workspaceFolder}/masterMind.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
