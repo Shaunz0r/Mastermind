@@ -36,7 +36,6 @@ h1{
 }
 
 .piece{
-    background-color: #000326;
     border: 2px solid black;
     display: inline-flex;
     height: 40px;
@@ -54,3 +53,27 @@ h1{
     display: inline-flex;
     
 }
+
+.red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  .white {
+    background-color: white;
+  }
