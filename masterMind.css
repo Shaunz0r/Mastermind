@@ -5,6 +5,9 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+#target {
+    visibility: visible;
+}
 #gameBoard {
     height: 800px;
     width: 450px;
