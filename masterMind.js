@@ -33,7 +33,7 @@ function colourToggle(event) {
     var index = colours.indexOf(currentColour);
     index++; // next element in the array
 
-    if (index > 5) {
+    if (index > colours.length - 1) { // validated against array length, so this auto-scales with array size (-1 because arrays are 0 based)
       index = 0;
     }
 
